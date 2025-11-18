@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAGWOLF | Size Guide</title>
+    
+    <!-- Load Tailwind CSS and configure custom color -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-gold': '#d4af37',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Font Import: Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #f8f8f8;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="max-w-4xl w-full mx-auto p-8 md:p-12 bg-gray-900 rounded-xl shadow-2xl border border-gray-800 m-4">
+        
+        <h1 class="text-3xl md:text-5xl font-extrabold uppercase mb-6 text-center text-accent-gold tracking-wide">
+            Size Guide
+        </h1>
+        <p class="text-center text-gray-400 mb-8">
+            All T-shirts are a premium unisex fit. Please review measurements carefully as all sales are final.
+        </p>
+
+        <!-- How to Measure Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 text-left">
+            <div>
+                <h3 class="font-bold text-lg text-white mb-2">Chest (Width)</h3>
+                <p class="text-sm text-gray-400">Measure under your arms, around the fullest part of your chest. Keep the tape measure horizontal.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg text-white mb-2">Body Length</h3>
+                <p class="text-sm text-gray-400">Measure from the highest point of the shoulder (beside the collar) down to the bottom hem.</p>
+            </div>
+        </div>
+
+        <!-- Size Chart Table -->
+        <div class="overflow-x-auto rounded-lg border border-gray-700">
+            <table class="w-full text-left text-sm">
+                <thead class="bg-gray-800 uppercase tracking-wider">
+                    <tr>
+                        <th class="p-4 font-bold">Size</th>
+                        <th class="p-4 font-bold">Chest (in)</th>
+                        <th class="p-4 font-bold">Length (in)</th>
+                        <th class="p-4 font-bold">Chest (cm)</th>
+                        <th class="p-4 font-bold">Length (cm)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-700">
+                    <!-- Small -->
+                    <tr class="hover:bg-gray-800 transition-colors">
+                        <td class="p-4 font-bold text-accent-gold">S</td>
+                        <td class="p-4">18"</td>
+                        <td class="p-4">28"</td>
+                        <td class="p-4">46</td>
+                        <td class="p-4">71</td>
+                    </tr>
+                    <!-- Medium -->
+                    <tr class="hover:bg-gray-800 transition-colors">
+                        <td class="p-4 font-bold text-accent-gold">M</td>
+                        <td class="p-4">20"</td>
+                        <td class="p-4">29"</td>
+                        <td class="p-4">51</td>
+                        <td class="p-4">74</td>
+                    </tr>
+                    <!-- Large -->
+                    <tr class="hover:bg-gray-800 transition-colors">
+                        <td class="p-4 font-bold text-accent-gold">L</td>
+                        <td class="p-4">22"</td>
+                        <td class="p-4">30"</td>
+                        <td class="p-4">56</td>
+                        <td class="p-4">76</td>
+                    </tr>
+                    <!-- X-Large -->
+                    <tr class="hover:bg-gray-800 transition-colors">
+                        <td class="p-4 font-bold text-accent-gold">XL</td>
+                        <td class="p-4">24"</td>
+                        <td class="p-4">31"</td>
+                        <td class="p-4">61</td>
+                        <td class="p-4">79</td>
+                    </tr>
+                    <!-- XX-Large -->
+                    <tr class="hover:bg-gray-800 transition-colors">
+                        <td class="p-4 font-bold text-accent-gold">XXL</td>
+                        <td class="p-4">26"</td>
+                        <td class="p-4">32"</td>
+                        <td class="p-4">66</td>
+                        <td class="p-4">81</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Link back to the main site -->
+        <div class="text-center">
+            <a href="index.html" class="inline-block mt-10 py-3 px-8 bg-accent-gold text-black text-sm tracking-widest uppercase rounded-full hover:bg-white transition duration-300 font-bold shadow-lg">
+                Back to Dragwolf
+            </a>
+        </div>
+        
+    </div>
+
+</body>
+</html>

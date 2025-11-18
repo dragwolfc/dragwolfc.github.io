@@ -1,0 +1,268 @@
+<!DOCTYPE relaunch of dragwolf collections website>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAGWOLF | Apex Premium T-Shirts - Coming Soon</title>
+    <meta name="description" content="Dragwolf is a premium clothing brand delivering bold streetwear, modern silhouettes, and high-quality fabrics. Every piece is crafted to reflect confidence, individuality, and a fierce, urban attitude. Explore signature designs, exclusive drops, and standout styles made to elevate your everyday look.">
+    <!-- Load Tailwind CSS and configure custom color -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configure 'accent-gold' color to be available as a Tailwind utility
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-gold': '#d4af37',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Font Import: Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #f8f8f8;
+            scroll-behavior: smooth;
+        }
+
+        /* The custom .accent-gold class is now replaced by the Tailwind utility 'text-accent-gold' */
+        .bg-accent-gold {
+            background-color: #d4af37;
+        }
+
+        /* --- Animation Styles (CSS States) --- */
+        
+        /* Base state for elements that will animate in */
+        .animate-item {
+            opacity: 0;
+            transition: opacity 1.2s ease-out, transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* State for text/small items: slight slide up */
+        .slide-up {
+            transform: translateY(20px);
+        }
+
+        /* State for large blocks/images: slight scale up */
+        .scale-in {
+            transform: scale(0.98);
+        }
+
+        /* Active state when element is visible */
+        .animate-item.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        /* The custom parallax-bg class and image reference have been removed */
+
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Navigation --><header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm shadow-lg border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <!-- LOGO SECTION (DRAGWOLF Text + Placeholder Image) -->
+            <a href="#" class="flex items-center space-x-3 text-2xl font-black tracking-widest hover:text-accent-gold transition duration-300">
+                <!-- Placeholder Image for Logo (Explicitly showing where an image asset goes) -->
+                <img src="Picsart_25-11-15_13-34-06-705.png" alt="Dragwolf Logo Placeholder" class="h-8 w-8 rounded-full border-2 border-gray-700" onerror="this.onerror=null;this.src='https://placehold.co/40x40/555/FFF?text=Logo';">
+                <span>DRAGWOLF</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wider">
+                <a href="#collections" class="hover:text-accent-gold transition duration-300">NEXT DROP</a>
+                <a href="#motto" class="hover:text-accent-gold transition duration-300">THE CODE</a>
+                <!-- Link to the notification section --><a href="#shop" class="hover:text-accent-gold transition duration-300">GET NOTIFIED</a>
+            </div>
+            
+            <!-- Instagram Icon Link --><a href="https://instagram.com/dragwolf" target="_blank" class="p-2 rounded-full hover:bg-gray-800 transition duration-300" aria-label="Instagram">
+                <!-- Simple placeholder SVG for Instagram/Social Icon --><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+        </nav>
+    </header>
+
+    <!-- 1. Hero Section --><section id="hero" class="relative h-[80vh] md:h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+        <!-- Solid Black Background for Hero Section, replacing the image placeholder --><div class="absolute inset-0 z-0 bg-black"></div>
+
+        <div class="relative z-10 text-center px-4">
+            <!-- Animated Tagline --><p class="animate-item slide-up text-xs md:text-sm tracking-[0.4em] mb-4 text-gray-400 uppercase delay-300" data-delay="300">
+                THE APEX OF LUXURY STREETWEAR
+            </p>
+            
+            <!-- Main Title (Staggered Animation) --><h1 class="text-6xl sm:text-7xl lg:text-9xl font-extrabold uppercase mb-6 leading-none">
+                <span class="block animate-item slide-up delay-100" data-delay="100">DRAGWOLF</span>
+                <span class="block animate-item slide-up text-gray-500 delay-200" data-delay="200">COLLECTIONS</span>
+            </h1>
+
+            <!-- Call to Action Button: Link to Instagram --><a href="https://instagram.com/dragwolf" target="_blank" class="animate-item slide-up inline-block mt-8 py-3 px-10 border border-white text-sm tracking-widest uppercase hover:bg-white hover:text-black transition duration-500 delay-400" data-delay="400">
+                Follow for Drop Alerts
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Collections Section (Coming Soon Message) --><section id="collections" class="py-20 md:py-32 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <h2 class="text-4xl md:text-5xl font-extrabold uppercase mb-8 animate-item slide-up delay-100">
+                Next Apex Drop
+            </h2>
+            
+            <!-- Main Coming Soon Message Block --><div class="bg-gray-900 p-10 md:p-20 rounded-xl shadow-2xl animate-item scale-in delay-200">
+                <p class="text-6xl md:text-9xl font-black text-accent-gold tracking-widest mb-6">***</p>
+                <p class="text-2xl md:text-4xl font-extrabold uppercase text-white tracking-wider">
+                    Drops Coming Soon
+                </p>
+                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Our limited-edition collection is currently being forged. Follow our social channels to be the first to know the exact release date and secure exclusive access.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 3. Brand Motto/Solid Background Section --><section id="motto" class="relative h-[60vh] flex items-center justify-center overflow-hidden bg-gray-900">
+        <!-- Parallax effect and image removed. Using solid bg-gray-900 on the section. --><div class="relative z-10 text-center py-20 px-4 bg-black/50 rounded-xl max-w-4xl mx-auto backdrop-blur-sm">
+            <p class="text-sm tracking-widest uppercase mb-4 text-gray-400 animate-item slide-up delay-100" data-delay="100">
+                The Code
+            </p>
+            <h2 class="text-3xl md:text-5xl font-bold italic leading-tight text-white animate-item slide-up delay-200" data-delay="200">
+                "We don't follow trends. We forge the future of the silhouette."
+            </h2>
+            <p class="mt-6 text-base text-gray-300 animate-item slide-up delay-300" data-delay="300">
+                Each piece is a limited edition. Crafted for those who lead, not those who wait.
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. Exclusive Access/Get Notified Section (Updated for DM Sales) --><section id="shop" class="py-20 md:py-32 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Updated Padlock SVG Icon (Clearer design) --><div class="mb-6 animate-item slide-up delay-100" data-delay="100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-accent-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2" fill="none" stroke="currentColor"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="currentColor"/>
+                </svg>
+            </div>
+
+            <h3 class="text-5xl font-extrabold uppercase mb-4 animate-item slide-up delay-200" data-delay="200">
+                Exclusive Access
+            </h3>
+            <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto animate-item slide-up delay-300" data-delay="300">
+                Every Dragwolf drop is extremely limited. The only way to guarantee first access and purchase instructions is by following our official Instagram channel.
+            </p>
+            
+            <!-- DM to Purchase Button - Changed text to Follow --><a href="https://instagram.com/dragwolf" target="_blank" class="inline-block py-3 px-12 bg-accent-gold text-black text-sm tracking-widest uppercase rounded-full hover:bg-white transition duration-300 font-bold shadow-lg shadow-yellow-800/50 animate-item slide-up delay-400" data-delay="400">
+                Follow @DRAGWOLF for Drop Alerts
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section --><footer id="contact" class="bg-black border-t border-gray-800 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+                
+                <div class="col-span-2 md:col-span-1 animate-item slide-up delay-100" data-delay="100">
+                    <h4 class="font-bold mb-4 uppercase tracking-wider">Dragwolf</h4>
+                    <p class="text-gray-400 text-sm">Exclusive T-Shirt Drops.</p>
+                    <p class="text-gray-400 text-sm mt-2">dragwolfofficial@gmail.com</p>
+                </div>
+
+                <div class="animate-item slide-up delay-200" data-delay="200">
+                    <h4 class="font-bold mb-4 uppercase tracking-wider">Quick Links</h4>
+                    <ul class="text-sm space-y-2">
+                        <!-- Updated class to use Tailwind utility for the default color on non-hovered state -->
+                        <li><a href="#collections" class="text-gray-400 hover:text-accent-gold transition duration-300">Next Drop</a></li>
+                        <li><a href="sizeguide.html" class="text-gray-400 hover:text-accent-gold transition duration-300">Size Guide</a></li>
+                        <li><a href="returnpolicy.html" class="text-gray-400 hover:text-accent-gold transition duration-300">Returns Policy</a></li>
+                        <li><a href="sitemap.xml" class="text-gray-400 hover:text-accent-gold transition duration-300">sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="animate-item slide-up delay-400" data-delay="400">
+                    <h4 class="font-bold mb-4 uppercase tracking-wider">Social & Sales</h4>
+                    <!-- Simple Text Links for Social Media and DM link --><ul class="text-sm space-y-2">
+                        <li><a href="https://instagram.com/dragwolf" target="_blank" class="text-gray-400 hover:text-accent-gold transition duration-300 font-bold">INSTAGRAM (ALERTS)</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent-gold transition duration-300">X (Twitter)</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent-gold transition duration-300">Pinterest</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent-gold transition duration-300">Facebook</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-10 pt-6 border-t border-gray-800 text-center">
+                <p class="text-sm text-gray-500">&copy; 2025 Dragwolf. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Scroll Animations --><script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- 1. Intersection Observer Setup for Scroll-In Animations ---
+            const animateItems = document.querySelectorAll('.animate-item');
+
+            const observerOptions = {
+                root: null, // relative to the viewport
+                rootMargin: '0px',
+                // Trigger when 10% of the element is visible
+                threshold: 0.1 
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const delay = target.getAttribute('data-delay') || 0;
+                        
+                        // Use setTimeout to respect the staggered 'data-delay' attribute
+                        setTimeout(() => {
+                            target.classList.add('is-visible');
+                            observer.unobserve(target); // Stop observing once animated
+                        }, parseInt(delay));
+                        
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            animateItems.forEach(item => {
+                // Ensure hero elements are animated instantly on load (they have delays in HTML)
+                if (item.closest('#hero')) {
+                    item.classList.add('is-visible');
+                } else {
+                    observer.observe(item);
+                }
+            });
+
+
+            // --- 2. Smooth Scroll for Navigation Links ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 64, // Subtract header height (h-16 = 64px)
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
